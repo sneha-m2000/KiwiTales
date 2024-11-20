@@ -17,6 +17,14 @@
     
     
 }
+
+.navbar-nav {
+    gap: 20px; /* Adds spacing between navbar items */
+}
+.navbar-custom .navbar-collapse {
+    background-color: black; /* Ensure consistent styling on collapse */
+}
+
 /* Base styling for the navbar */
 .navbar-custom {
     background-color: black; /* Set navbar background to black */
