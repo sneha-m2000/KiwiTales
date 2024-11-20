@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+}
+
+/* General container for centering content */
+.service-detail {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 15px;
+    background-color: black; /* Set the background color to black */
+    color: white; /* Ensure text is readable on black background */
+    background-size: cover; /* Make the background cover the entire area */
+    transition: transform 0.3s ease; /* Add a transition effect to the container */
+}
+
+.service-detail:hover {
+    transform: scale(1.02); /* Subtle scaling effect on hover */
+}
+
+/* Heading Style */
+#service-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #32CD32; /* Lime Green for consistency */
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Add transition to color and text-shadow */
+}
+
+#service-title:hover {
+    color: #28a745; /* Darker green on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow on hover */
+}
+
+/* Image styling */
+#service-image {
+    max-width: 200px; /* Set a smaller width for the image */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Add transition effect to image */
+}
+
+#service-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Description text styling */
+#service-description {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #ddd; /* Light gray for text to stand out on black background */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition to color */
+}
+
+#service-description:hover {
+    color: darkgreen; /* Lighter text color on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+
+/* Button Style */
+.btn-primary {
+    background-color: #32CD32; /* Lime Green */
+    border-color: #32CD32;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #28a745; /* Darker green on hover */
+    border-color: #28a745;
+    transform: scale(1.05);
+}
+
+/* Button active (clicked) effect */
+.btn-primary:active {
+    background-color: black !important; /* Blue when clicked */
+    border-color: green !important;     /* Blue border when clicked */
+    color: white;           /* Change text color to white when clicked */
+    transform: scale(0.98); /* Slight shrinking effect when clicked */
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    #service-title {
+        font-size: 2rem;
+    }
+
+    #service-description {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

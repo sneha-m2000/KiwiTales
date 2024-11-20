@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Oswald:wght@400;500;700&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/* Base styling for the navbar */
+.navbar-custom {
+    background-color: black; /* Set navbar background to black */
+    color:darkgreen; /* Text color to white */
+    
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    
+}
+
+/* Apply text shadow to navbar links for better visibility */
+.navbar-custom .navbar-brand{
+    color: #32CD32; /* Lime green color for "Kiwi Tales" */
+    font-family:  "Bokor", system-ui; /* Apply the specific font */
+    text-shadow: 1px 1px 2px black; /* Add shadow for visibility */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: darkgreen; /* Lighter lime green on hover */
+    text-shadow: 2px 2px 4px black; /* Enhance shadow on hover */
+    transform: scale(1.1); /* Slight scaling effect */
+}
+ .navbar-nav .nav-link {
+    text-shadow: 2px 2px 4px darkgreen; /* Add black shadow to navbar text */
+}
+
+.navbar-brand img {
+    width: 40px;  /* Set the image width to make it look like an icon */
+    height: 40px;  /* Ensure the image height is the same as the width */
+    object-fit: cover;  /* Ensure the image fills the dimensions without distortion */
+    border-radius: 50%;  /* Make the image circular */
+      
+  }
+  
+
+
+
+/* Navbar items on hover */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #32CD32; /* Dark green color on hover */
+    background-color: rgba(50, 205, 50, 0.1); /* Subtle background effect */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Navbar toggler button (hamburger) */
+.navbar-custom .navbar-toggler {
+    border-color: #32CD32; /* Dark green border for the toggler button */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #32CD32; /* Dark green color for the icon */
+}
+
+/* Active nav link styling */
+.navbar-custom .navbar-nav .nav-link.active {
+    color: #32CD32; /* Dark green color for active link */
+    font-weight: bold;
+}
+
+/* Collapse navbar items when in mobile view */
+.navbar-custom .navbar-collapse {
+    background-color: black; /* Ensure background is consistent in collapsed view */
+}
+
+/* Optional: for a smooth shadow effect under the navbar */
+.navbar-custom {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+
+  /* Hero Section Styling */
+  .hero {
+    background: url('./asset/herosection (2).jpg') no-repeat center center/cover;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Make the overlay visible */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2; /* Bring content above overlay */
+    position: relative; 
+}
+
+
+ /* Style for the h1 element */
+h1.display-4 {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    color: greenyellow; /* Text color */
+    font-family: "Playfair Display", serif; /* Apply the custom font */
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 4px black; /* Black shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for h1 */
+h1.display-4:hover {
+    color: black; /* Change text color on hover */
+    text-shadow: 4px 4px 6px black, 0 0 25px limegreen, 0 0 5px darkgreen; /* More intense shadow effect */
+    transform: scale(1.1); /* Slightly increase the size */
+}
+
+/* Style for the p element */
+p.lead {
+    font-size: 2.25rem;
+    text-align: center;
+    color: greenyellow; /* A lighter shade of green */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black shadow with slight transparency */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for p */
+p.lead:hover {
+    color: black; /* Change text color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 25px limegreen, 0 0 5px darkgreen; /* Stronger shadow */
+    transform: scale(1.05); /* Slightly increase the size */
+}
+ 
+
+/* About Section Styling */
+#about {
+    background-color: black; /* Light gray background */
+    padding: 50px 25px; /* Padding for top and bottom spacing */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title styling */
+#about h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color:  #3a7f2a; /* Dark green */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+#about p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+#about .col-md-6 img {
+    max-width: 100%; /* Ensures responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for image */
+#about .col-md-6 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the h2 with class 'text-center mb-4' */
+.text-center.mb-4 {
+    font-family: "Bokor", serif; /* Apply the Bokor font family */
+    font-size: 2.5rem; /* Adjust the font size for h2 */
+    color: #32CD32; /* Lime green text color */
+    background-color: #000000;
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 3px; /* Add spacing between the letters */
+    margin-bottom: 1.5rem; /* Space at the bottom */
+    padding: 15px; /* Add padding around the text */
+    border-bottom: 2px solid #32CD32; /* Green underline */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the Specials heading */
+.text-center.mb-4:hover {
+    color: #28a745; /* Darker green on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+
+/* Ensures all cards have the same height */
+.card-fixed-height {
+    height: 400px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spreads content evenly */
+    overflow: hidden; /* Prevents content overflow */
+    text-overflow: ellipsis; /* Adds ellipsis if text exceeds */
+    background-color: black; /* Black background for the card */
+    color: gray; /* Gray font color for the card */
+}
+
+/* Ensure consistent image size */
+.card-img-top {
+    max-height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Crop images to maintain aspect ratio */
+}
+
+/* Keep card body content consistent */
+.card-body {
+    flex-grow: 1; /* Ensures body grows evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black; /* Black background for card body */
+    color: gray; /* Gray text color for better contrast */
+}
+
+/* Add hover effect for better UI feedback */
+.card:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Prevent overflowing text */
+.card-text {
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Hides overflow */
+    text-overflow: ellipsis; /* Adds ellipsis (...) for long text */
+}
+
+/* Customizing btn-primary */
+.btn-primary {
+    background-color: #3a7f2a !important; /* Dark green background */
+    color: white !important; /* White text color */
+    border: none !important;
+    border-radius: 50px; /* Rounded corners */
+    padding: 12px 30px; /* Padding for a better look */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Hover effect for btn-primary */
+.btn-primary:hover {
+    background-color: #378623 !important; /* Darker green background on hover */
+    color: white !important; /* Ensures text remains white */
+    transform: translateY(-2px); /* Slight lifting effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Focus effect for btn-primary */
+.btn-primary:focus {
+    outline: none !important; /* Removes outline on focus */
+    box-shadow: 0 0 0 2px rgba(89, 255, 0, 0.5); /* Focus shadow */
+}
+
+/* Active effect for btn-primary */
+.btn-primary:active {
+    transform: translateY(1px); /* Button press effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Reduced shadow on press */
+}
+
+/* Style for the h1 with class 'heading' */
+.heading {
+    font-family: "Bokor", serif; /* Apply the Bokor font family */
+    font-size: 3rem; /* Adjust the font size as needed */
+    color: #32CD32; /* Lime green text color */
+    background-color: #000000;
+    text-align: center; /* Center align the text */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    padding: 20px; /* Add some padding around the heading */
+    border-bottom: 2px solid #32CD32; /* Add a green underline for emphasis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow around the text */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the heading */
+.heading:hover {
+    color: #28a745; /* Change color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a soft shadow effect on hover */
+    transform: scale(1.05); /* Slightly scale the text on hover */
+}
+
+
+/* General container for the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 500px; /* Adjusted height for a better view */
+}
+
+/* Hide images by default in the fade effect */
+.mySlides {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures images stretch to full width */
+    height: 100%; /* Ensures images stretch to full height */
+}
+
+/* Style for each image */
+.mySlides img {
+    width: 100%; /* Adjusted to make the image fit the container's full width */
+    height: 100%; /* Ensures the image stretches vertically */
+    object-fit: cover; /* Prevents stretching by maintaining the aspect ratio */
+}
+
+/* Text styling within the slides */
+.text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 8px;
+    max-width: 90%; /* Prevent text from overflowing */
+}
+
+/* Heading style with black and green effect */
+/* Style for the h2 text */
+.text h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #32CD32; /* Lime green for title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Green glow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the h2 element */
+.text h2:hover {
+    color: #28a745; /* Darker green on hover */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Stronger glow effect */
+    transform: scale(1.1); /* Slightly enlarge the text */
+}
+
+
+/* List styling */
+/* Style for the list */
+.text ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Georgia', serif;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Style for each list item */
+.text ul li {
+    margin-bottom: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the list items */
+.text ul li:hover {
+    color: #32CD32; /* Change text color on hover */
+    background-color: rgba(0, 0, 0, 0.7); /* Add background on hover */
+    padding: 5px; /* Adds padding to make it more interactive */
+    border-radius: 5px; /* Optional: rounded corners for the list item */
+}
+
+/* Button styling */
+.btn-purchase {
+    display: inline-block;
+    background-color: #32CD32;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-purchase:hover {
+    background-color: darkgreen;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Add the fade transition effect for the slides */
+.fade {
+    animation: fade 5s infinite;
+}
+
+/* Define the fade animation */
+@keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .text ul li {
+        font-size: 0.9rem;
+    }
+
+    .btn-purchase {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .slideshow-container {
+        height: 300px; /* Adjusted height for smaller screens */
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    color: darkgreen;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  footer p {
+    font-size: 18px;
+    font-weight: 700; /* Bold text for the copyright */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  footer p:hover {
+    color: lightgreen; /* Color change on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+  }
+  
+  
+  footer a {
+    color:darkgreen;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif; /* Using Oswald for the links */
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  footer a i {
+    margin-right: 8px; /* Space between the icon and the text */
+  }
+  
+  footer a:hover {
+    color: lightgreen; /* Lighter green on hover */
+  }
+  
+  footer .social-links a {
+    color: lime;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-links a:hover {
+    color: lightgreen; /* Lighter green on hover */
+  }
+  
+  footer .social-links p {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif; /* Using Roboto for social text */
+  }
+  

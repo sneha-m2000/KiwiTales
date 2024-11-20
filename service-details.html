@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="service-details.css">
+
+    <style>
+        .service-detail {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container service-detail">
+        <h2 id="service-title"></h2>
+        <img id="service-image" src="" alt="Service Image" class="img-fluid mb-4">
+        <p id="service-description"></p>
+        <a href="index.html" class="btn btn-primary">Back to Services</a>
+    </div>
+
+    <script>
+        // Get query parameters from URL
+        const params = new URLSearchParams(window.location.search);
+        const serviceTitle = params.get('title');
+        const serviceImage = params.get('image');
+        const serviceDescription = params.get('description');
+
+        // Populate the page with the service details
+        document.getElementById('service-title').textContent = serviceTitle;
+        document.getElementById('service-image').src = serviceImage;
+        document.getElementById('service-description').textContent = serviceDescription;
+    </script>
+
+</body>
+</html>
