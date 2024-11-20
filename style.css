@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 /* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Oswald:wght@400;500;700&display=swap');
 
@@ -10,6 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+   
     
     
 }
@@ -28,7 +32,7 @@
 /* Apply text shadow to navbar links for better visibility */
 .navbar-custom .navbar-brand{
     color: #32CD32; /* Lime green color for "Kiwi Tales" */
-    font-family:  "Bokor", system-ui; /* Apply the specific font */
+    font-family: "Creepster", system-ui;; /* Apply the specific font */
     text-shadow: 1px 1px 2px black; /* Add shadow for visibility */
     font-size: 1.5rem; /* Adjust font size */
     font-weight: bold;
@@ -40,7 +44,12 @@
     transform: scale(1.1); /* Slight scaling effect */
 }
  .navbar-nav .nav-link {
+    color: lawngreen;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-shadow: 2px 2px 4px darkgreen; /* Add black shadow to navbar text */
+    text-align: center;
 }
 
 .navbar-brand img {
@@ -52,7 +61,7 @@
   }
   
 
-
+  
 
 /* Navbar items on hover */
 .navbar-custom .navbar-nav .nav-link:hover {
@@ -73,7 +82,8 @@
 /* Active nav link styling */
 .navbar-custom .navbar-nav .nav-link.active {
     color: #32CD32; /* Dark green color for active link */
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 /* Collapse navbar items when in mobile view */
@@ -97,7 +107,7 @@
     text-align: center;
     color: black;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 /* Make the overlay visible */
@@ -159,12 +169,15 @@ p.lead:hover {
 /* About Section Styling */
 #about {
     background-color: black; /* Light gray background */
-    padding: 50px 25px; /* Padding for top and bottom spacing */
+    padding:    50px 25px; /* Padding for top and bottom spacing */
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+
 
 /* Title styling */
 #about h2 {
@@ -182,12 +195,13 @@ p.lead:hover {
     font-family: 'EB Garamond', serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: #333333;
+    color: white;
     margin-bottom: 20px;
 }
 
 /* Image styling */
 #about .col-md-6 img {
+    
     max-width: 100%; /* Ensures responsive image */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
@@ -200,6 +214,45 @@ p.lead:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Section background color with custom padding */
+.special-section {
+    background-color:darkgreen; /* Light background color for the section */
+    padding: 30px 0; /* Custom padding around the section */
+}
+
+/* Special heading effect */
+.special-heading {
+    font-size: 3rem; /* Make the heading larger */
+    font-weight: bold; /* Bold for emphasis */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 4px; /* Spacing between letters */
+    color: #006400; /* Dark green color for the heading */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+    margin-bottom: 30px; /* Add space below the heading */
+   
+}
+
+/* Optional: Style for the cards inside the section */
+.special-section .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect for cards */
+}
+
+.special-section .card-img-top {
+    object-fit: cover;
+    height: 200px; /* Adjust image height */
+}
+
+.special-section .btn-primary {
+    background-color: #006400; /* Matching button color with heading */
+    border-color: #006400;
+}
+
+.special-section .btn-primary:hover {
+    background-color: #004d00; /* Darker green on hover */
+}
+
 
 /* Style for the h2 with class 'text-center mb-4' */
 .text-center.mb-4 {
@@ -234,13 +287,15 @@ p.lead:hover {
     overflow: hidden; /* Prevents content overflow */
     text-overflow: ellipsis; /* Adds ellipsis if text exceeds */
     background-color: black; /* Black background for the card */
-    color: gray; /* Gray font color for the card */
+   
+    
 }
 
 /* Ensure consistent image size */
 .card-img-top {
     max-height: 150px; /* Fixed height for images */
     object-fit: cover; /* Crop images to maintain aspect ratio */
+    
 }
 
 /* Keep card body content consistent */
@@ -250,7 +305,7 @@ p.lead:hover {
     flex-direction: column;
     justify-content: space-between;
     background-color: black; /* Black background for card body */
-    color: gray; /* Gray text color for better contrast */
+    color:whitesmoke !important; /* Gray text color for better contrast */
 }
 
 /* Add hover effect for better UI feedback */
@@ -461,6 +516,7 @@ p.lead:hover {
 
 /* Footer Styling */
 footer {
+    margin-top: 5px;
     background-color: black;
     color: darkgreen;
     padding: 30px 0;
